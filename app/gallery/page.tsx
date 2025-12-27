@@ -7,18 +7,16 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&q=80", alt: "미용 사례 1" },
-  { id: 2, src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80", alt: "미용 사례 2" },
-  { id: 3, src: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=80", alt: "미용 사례 3" },
-  { id: 4, src: "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80", alt: "미용 사례 4" },
-  { id: 5, src: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=80", alt: "미용 사례 5" },
-  { id: 6, src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80", alt: "미용 사례 6" },
-  { id: 7, src: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&q=80", alt: "미용 사례 7" },
-  { id: 8, src: "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80", alt: "미용 사례 8" },
-  { id: 9, src: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=80", alt: "미용 사례 9" },
-  { id: 10, src: "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80", alt: "미용 사례 10" },
-  { id: 11, src: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&q=80", alt: "미용 사례 11" },
-  { id: 12, src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80", alt: "미용 사례 12" },
+  { id: 1, src: "/images/gallery/1.png", alt: "미용 사례 1" },
+  { id: 2, src: "/images/gallery/2.png", alt: "미용 사례 2" },
+  { id: 3, src: "/images/gallery/3.png", alt: "미용 사례 3" },
+  { id: 4, src: "/images/gallery/4.png", alt: "미용 사례 4" },
+  { id: 5, src: "/images/gallery/5.png", alt: "미용 사례 5" },
+  { id: 6, src: "/images/gallery/6.png", alt: "미용 사례 6" },
+  { id: 7, src: "/images/gallery/7.png", alt: "미용 사례 7" },
+  { id: 8, src: "/images/gallery/8.png", alt: "미용 사례 8" },
+  { id: 9, src: "/images/gallery/9.png", alt: "미용 사례 9" },
+  { id: 10, src: "/images/gallery/10.png", alt: "미용 사례 10" },
 ];
 
 export default function GalleryPage() {
