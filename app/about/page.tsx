@@ -66,8 +66,8 @@ export default function AboutPage() {
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <div className="relative h-[300px] md:h-[400px]">
                     <Image
-                      src={index % 2 === 0 ? "/images/shop/s2.png" : "/images/shop/s1.png"}
-                      alt={`애견 미용실 내부 ${index % 2 === 0 ? "2" : "1"}`}
+                      src={`/images/shop/s${(index % 3) + 2}.png`}
+                      alt={`애견 미용실 내부 ${(index % 3) + 2}`}
                       fill
                       className="object-cover"
                     />
