@@ -16,6 +16,9 @@ const galleryImages = [
   { id: 7, src: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&q=80", alt: "미용 사례 7" },
   { id: 8, src: "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80", alt: "미용 사례 8" },
   { id: 9, src: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=80", alt: "미용 사례 9" },
+  { id: 10, src: "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=800&q=80", alt: "미용 사례 10" },
+  { id: 11, src: "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&q=80", alt: "미용 사례 11" },
+  { id: 12, src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&q=80", alt: "미용 사례 12" },
 ];
 
 export default function GalleryPage() {

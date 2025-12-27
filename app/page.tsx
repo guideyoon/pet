@@ -105,14 +105,22 @@ export default function Home() {
             미용 사례
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="relative aspect-square rounded-2xl overflow-hidden">
+            {[
+              "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=600&q=80",
+              "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=80",
+              "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80",
+              "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600&q=80",
+              "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80",
+              "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=80",
+            ].map((src, i) => (
+              <div key={i} className="relative aspect-square rounded-2xl overflow-hidden group cursor-pointer">
                 <Image
-                  src={`https://images.unsplash.com/photo-${1551717743 + i}?w=600&q=80`}
-                  alt={`미용 사례 ${i}`}
+                  src={src}
+                  alt={`미용 사례 ${i + 1}`}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
               </div>
             ))}
           </div>

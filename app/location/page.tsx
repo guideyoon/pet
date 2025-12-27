@@ -28,9 +28,22 @@ export default function LocationPage() {
 
         {/* 지도 영역 */}
         <div className="bg-pastel/30 rounded-2xl p-8 mb-8">
-          <div className="aspect-video bg-darkGray/10 rounded-lg flex items-center justify-center">
-            <p className="text-darkGray/50">지도 영역 (카카오맵 또는 구글맵 연동)</p>
+          <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1234567890123!2d127.0276108!3d37.497942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDI5JzUyLjYiTiAxMjfCsDAxJzM5LjQiRQ!5e0!3m2!1sko!2skr!4v1234567890123!5m2!1sko!2skr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+              title="애견 미용실 위치"
+            />
           </div>
+          <p className="text-sm text-darkGray/60 mt-4 text-center">
+            * 실제 주소에 맞게 지도를 수정해주세요. Google Maps에서 주소를 검색한 후 "공유" → "지도 퍼가기"를 통해 iframe 코드를 가져오세요.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">

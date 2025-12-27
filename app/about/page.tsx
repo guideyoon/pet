@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "샵 소개",
@@ -33,6 +34,19 @@ export default function AboutPage() {
         <p className="text-center text-darkGray/70 mb-16">
           저희 미용실의 철학과 케어 방식을 소개합니다
         </p>
+
+        {/* 샵 이미지 */}
+        <div className="mb-16 rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative h-[400px] md:h-[500px]">
+            <Image
+              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1200&q=80"
+              alt="애견 미용실 내부"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
 
         <div className="space-y-12 mb-16">
           {principles.map((principle, index) => (
