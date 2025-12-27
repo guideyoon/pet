@@ -42,7 +42,7 @@ export default function LocationPage() {
             />
           </div>
           <p className="text-sm text-darkGray/60 mt-4 text-center">
-            * 실제 주소에 맞게 지도를 수정해주세요. Google Maps에서 주소를 검색한 후 "공유" → "지도 퍼가기"를 통해 iframe 코드를 가져오세요.
+            * 실제 주소에 맞게 지도를 수정해주세요. Google Maps에서 주소를 검색한 후 &quot;공유&quot; → &quot;지도 퍼가기&quot;를 통해 iframe 코드를 가져오세요.
           </p>
         </div>
 
