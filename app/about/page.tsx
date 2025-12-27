@@ -36,30 +36,44 @@ export default function AboutPage() {
         </p>
 
         {/* 샵 이미지 */}
-        <div className="mb-16 rounded-2xl overflow-hidden shadow-lg">
-          <div className="relative h-[400px] md:h-[500px]">
-            <Image
-              src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1200&q=80"
-              alt="애견 미용실 내부"
-              fill
-              className="object-cover"
-              priority
-            />
+        <div className="mb-16 space-y-8">
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative h-[400px] md:h-[500px]">
+              <Image
+                src="/images/shop/s1.png"
+                alt="애견 미용실 내부 1"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
 
         <div className="space-y-12 mb-16">
           {principles.map((principle, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <h2 className="text-2xl font-semibold mb-4 text-darkGray">
-                {principle.title}
-              </h2>
-              <p className="text-lg text-darkGray/80 leading-relaxed">
-                {principle.description}
-              </p>
+            <div key={index} className="space-y-8">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                <h2 className="text-2xl font-semibold mb-4 text-darkGray">
+                  {principle.title}
+                </h2>
+                <p className="text-lg text-darkGray/80 leading-relaxed">
+                  {principle.description}
+                </p>
+              </div>
+              {/* 교차 이미지 표시 */}
+              {index < principles.length - 1 && (
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <div className="relative h-[300px] md:h-[400px]">
+                    <Image
+                      src={index % 2 === 0 ? "/images/shop/s2.png" : "/images/shop/s1.png"}
+                      alt={`애견 미용실 내부 ${index % 2 === 0 ? "2" : "1"}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>

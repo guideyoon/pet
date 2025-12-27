@@ -16,7 +16,6 @@ const galleryImages = [
   { id: 7, src: "/images/gallery/7.png", alt: "미용 사례 7" },
   { id: 8, src: "/images/gallery/8.png", alt: "미용 사례 8" },
   { id: 9, src: "/images/gallery/9.png", alt: "미용 사례 9" },
-  { id: 10, src: "/images/gallery/10.png", alt: "미용 사례 10" },
 ];
 
 export default function GalleryPage() {
